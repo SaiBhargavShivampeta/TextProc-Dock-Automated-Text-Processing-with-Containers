@@ -13,6 +13,7 @@ Retrieves the IP address of the machine running the container.
 Outputs all results to result.txt located in /home/data/output/ and also prints the results to the console.
 This project highlights the use of lightweight Docker images, Python for text processing, and Kubernetes for container orchestration.
 
+
 **Project Structure**
 
 ├── script.py          
@@ -28,11 +29,11 @@ This project highlights the use of lightweight Docker images, Python for text pr
 **Key Components:**
 
 1. Dockerfile
-2. 
+
 The Dockerfile uses a lightweight Python image (python:3.9-slim). It copies the Python script and input files into the container and sets the Python script as the entry point for execution.
 
-3. Python Script (script.py)
-4. 
+2. Python Script (script.py)
+   
 The script performs the following functions:
 
 Reads text files and splits words while managing contractions.
