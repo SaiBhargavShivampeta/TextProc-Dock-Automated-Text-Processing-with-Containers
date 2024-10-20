@@ -99,4 +99,5 @@ kubectl get pods
 
 
 **Conclusion**
+
 This project demonstrates the effectiveness of Docker for automating tasks and optimizing workflows. The integration of Kubernetes adds a layer of scalability and management for container deployments. Through this assignment, you have created an end-to-end solution that efficiently reads, processes, and outputs data within a container environment.
