@@ -2,6 +2,7 @@
 
 This project showcases the creation of a Docker container that automates text processing using a Python script. The container reads two input text files, analyzes word counts, identifies the top frequent words, and retrieves the machine's IP address, all while automating the execution and output generation. Additionally, the project offers optional orchestration using Kubernetes to manage multiple container replicas.
 
+
 **Overview**
 The Python script (script.py) within the container reads IF.txt and AlwaysRememberUsThisWay.txt from the /home/data directory. It performs several tasks:
 
@@ -23,12 +24,15 @@ This project highlights the use of lightweight Docker images, Python for text pr
 ├── output/            
 │   └── result.txt     
 
+
 **Key Components:**
 
 1. Dockerfile
+2. 
 The Dockerfile uses a lightweight Python image (python:3.9-slim). It copies the Python script and input files into the container and sets the Python script as the entry point for execution.
 
-2. Python Script (script.py)
+3. Python Script (script.py)
+4. 
 The script performs the following functions:
 
 Reads text files and splits words while managing contractions.
@@ -37,10 +41,12 @@ Retrieves the machine's IP address using the socket library.
 Writes all results to /home/data/output/result.txt.
 
 3.Kubernetes Deployment (deployment.yaml)
+
 The Kubernetes configuration deploys two replicas of the container for scalability and reliability. You can monitor the deployment using commands like:
 
 kubectl get pods > kube_output.txt  
 cat kube_output.txt  
+
 
 **Usage**
 
@@ -63,6 +69,7 @@ To apply the deployment, use:
 
 kubectl apply -f deployment.yaml  
 
+
 **Expected Output (Sample)**
 
 Total words in IF.txt: 300  
@@ -81,11 +88,13 @@ Top 3 words in AlwaysRememberUsThisWay.txt:
 
 IP Address of the machine running the container: 192.168.1.10  
 
+
 **Extra Credit (Kubernetes Orchestration)**
 
 The project includes a deployment.yaml file to configure two replicas of the container, ensuring scalability and fault tolerance. You can check the status of the deployed containers using:
 
 kubectl get pods  
 
-###Conclusion
+
+**Conclusion**
 This project demonstrates the effectiveness of Docker for automating tasks and optimizing workflows. The integration of Kubernetes adds a layer of scalability and management for container deployments. Through this assignment, you have created an end-to-end solution that efficiently reads, processes, and outputs data within a container environment.
