@@ -4,6 +4,7 @@ This project showcases the creation of a Docker container that automates text pr
 
 
 **Overview**
+
 The Python script (script.py) within the container reads IF.txt and AlwaysRememberUsThisWay.txt from the /home/data directory. It performs several tasks:
 
 Counts the total number of words in each file.
