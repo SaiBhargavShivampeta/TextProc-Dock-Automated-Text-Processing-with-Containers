@@ -1,4 +1,4 @@
-**Cloud Assignment 3: Docker Automation Project**
+**Docker Automation Project**
 
 This project showcases the creation of a Docker container that automates text processing using a Python script. The container reads two input text files, analyzes word counts, identifies the top frequent words, and retrieves the machine's IP address, all while automating the execution and output generation. Additionally, the project offers optional orchestration using Kubernetes to manage multiple container replicas.
 
